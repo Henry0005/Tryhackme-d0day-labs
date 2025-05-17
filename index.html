@@ -87,26 +87,5 @@
     <img src="image1.png" alt="Print 2 - Volt Typhoon">
   </div>
 
-  <div id="stats" style="text-align: center; margin-top: 3rem;">
-    <h2 style="color:#90cdf4;">📈 Minhas estatísticas no TryHackMe</h2>
-    <p id="thm-data" style="font-size: 1rem; color: #a0aec0;">Carregando dados...</p>
-  </div>
-
-  <script>
-    fetch("https://tryhackme.com/api/user/Henry%2E05")
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById("thm-data").innerHTML = `
-          <strong>Usuário:</strong> ${data.name} <br>
-          <strong>Nível:</strong> ${data.rank} | <strong>XP:</strong> ${data.points}<br>
-          <strong>Rooms concluídas:</strong> ${data.completedRooms.length}<br>
-          <strong>Posição global:</strong> #${data.globalRank}<br>
-          <strong>Streak:</strong> ${data.streak} dias
-        `;
-      })
-      .catch(() => {
-        document.getElementById("thm-data").innerText = "Não foi possível carregar os dados.";
-      });
-  </script>
 </body>
 </html>
