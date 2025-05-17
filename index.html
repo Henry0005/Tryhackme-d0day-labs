@@ -38,6 +38,18 @@
     a:hover {
       text-decoration: underline;
     }
+    .details {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto 1rem auto;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .date {
+      font-weight: bold;
+      color: #a0aec0;
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -45,13 +57,33 @@
 
   <div class="image-container">
     <h2><a href="https://tryhackme.com/room/apt28inceptiontheory" target="_blank">APT28 - Inception Theory</a></h2>
-    <p>📅 Publicada: 14/05/2025 | ✅ Resolvida no mesmo dia.</p>
+    <p class="date">📅 Publicada: 14/05/2025 | ✅ Resolvida no mesmo dia.</p>
+    <div class="details">
+      <p>Esta room simula uma campanha avançada do grupo APT28, focando em ações pós-exploração e coleta de informações. Os desafios incluem:</p>
+      <ul>
+        <li>Análise de logs no Splunk.</li>
+        <li>Identificação de persistência via backdoor.</li>
+        <li>Reconhecimento de exfiltração de dados.</li>
+        <li>Rastreio de execução de comandos e coleta de credenciais.</li>
+      </ul>
+      <p>O objetivo é traçar o caminho do invasor e entender os TTPs usados pelo grupo APT28 (Fancy Bear).</p>
+    </div>
     <img src="image0.png" alt="Print 1 - APT28 Inception Theory">
   </div>
 
   <div class="image-container">
-    <h2><a href="https://tryhackme.com/room/volttyphoon" target="_blank">Volt Typhoon</a></h2>
-    <p>📅 Publicada: 16/05/2025 | ✅ Resolvida no mesmo dia.</p>
+    <h2><a href="https://tryhackme.com/room/volt-typhoon" target="_blank">Volt Typhoon</a></h2>
+    <p class="date">📅 Publicada: 16/05/2025 | ✅ Resolvida no mesmo dia.</p>
+    <div class="details">
+      <p>Room baseada nas operações do grupo chinês Volt Typhoon, conhecido por ataques furtivos e uso de Living off the Land (LotL). Os desafios envolvem:</p>
+      <ul>
+        <li>Investigação via Splunk e logs PowerShell.</li>
+        <li>Detecção de execução do Mimikatz para roubo de credenciais.</li>
+        <li>Análise de persistência com webshell.</li>
+        <li>Identificação de conexões e comportamento de rede anômalo.</li>
+      </ul>
+      <p>O foco está na resposta a incidentes e threat hunting com base em artefatos simulando um ambiente comprometido.</p>
+    </div>
     <img src="image1.png" alt="Print 2 - Volt Typhoon">
   </div>
 
